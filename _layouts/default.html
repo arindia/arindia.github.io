@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+	
+<!-- Head -->
+{% include head.html %}
+
+<body class="is-preload">
+	<!-- Wrapper -->
+	<div id="wrapper">
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+				<!-- Header -->
+				{% include header.html %} 
+				{{ content }}
+			</div>
+		</div>
+		<!-- Sidebar -->
+		<div id="sidebar">
+			<div class="inner">
+				<!-- Search -->
+				{% include select.html %}
+				<!-- Menu -->
+				{% include nav.html %}
+				<!-- Contact -->
+				{% include contact.html %}
+				<!-- Footer -->
+				{% include footer.html %}
+			</div>
+		</div>
+	</div>
+	<!-- Scripts -->
+	{% include scripts.html %}
+</body>
+
+</html>
