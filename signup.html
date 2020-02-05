@@ -14,6 +14,16 @@ title: Become A Freelancer
 	<span class="image object">
 		<img src="https://images.pexels.com/photos/273222/pexels-photo-273222.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" />
 	</span>
+	<div class="row gtr-uniform">
+		<form action="https://formspree.io/mgekajpd" method="POST">
+			<div class="col-6 col-12-xsmall">
+				<input type="text" name="email" id="email" value="" placeholder="Email">
+			</div>
+			<div class="col-6 col-12-xsmall">
+				<input type="submit" value="Sign Up" class="primary">
+			</div>
+		</form>
+	</div>
 </section>
 
 <section>
@@ -29,7 +39,7 @@ title: Become A Freelancer
 				<h1>₹200</h1>
 				<p>per month, billed yearly</p>
 				<ul class="actions">
-					<li><a href="{{site.url}}{{page.url}}#signup" class="button primary fit">Sign Up</a>
+					<li><a href="{{site.url}}{{page.url}}#banner" class="button primary fit">Sign Up</a>
 					</li>
 				</ul>
 				<p>Open your page with a powerful, flexible platform designed to grow with you.</p>
@@ -69,64 +79,3 @@ title: Become A Freelancer
 		</article>
 	</div>
 </section>
-
-<section id="signup">
-	<header class="major">
-		<h2>Sign Up</h2>
-	</header>
-	<div class="row gtr-200">
-		<form action="https://formspree.io/mgekajpd" method="POST">
-			<div class="row gtr-uniform">
-				<div class="col-6 col-12-xsmall">
-					<input type="text" name="name" id="name" placeholder="Name" />
-				</div>
-				<div class="col-6 col-12-xsmall">
-					<input type="email" name="email" id="email" placeholder="Email" />
-				</div>
-				<div class="col-6 col-12-xsmall">
-					<input type="text" name="number" id="number" placeholder="Number" />
-				</div>
-				<div class="col-6 col-12-xsmall">
-					<input type="text" name="job" id="job" placeholder="Profession" />
-				</div>
-				<div class="col-6 col-12-xsmall">
-					<abbr title="Insert link to your profile picture">
-						<input type="url" name="profile" id="profile" placeholder="Profile picture (url)" />
-					</abbr>
-				</div>
-				<div class="col-6 col-12-xsmall">
-					<select name="city" id="city" required="">
-						<option>Select your city</option>
-						{% for city in site.data.cities %}
-						<option value="{{ city.title }}, {{ city.state }}">{{ city.title }}, {{ city.state }}</option>
-						{% endfor %}
-					 </select>
-				</div>
-				<div class="col-6 col-12-xsmall">
-					<input type="text" name="region" id="region" placeholder="Area" />
-				</div>
-				<div class="col-6 col-12-xsmall">
-					<select name="payment" id="payment">
-						<option value="Mode">Preferred mode of transaction</option>
-						<option value="Cash">Cash</option>
-						<option value="Google Pay">Google Pay</option>
-					 </select>
-				</div>
-				<div class="col-12">
-					<textarea name="bio" id="bio" placeholder="Bio" rows="3"></textarea>
-				</div>
-				<div class="col-12">
-					<ul class="actions">
-						<li>
-							<input type="submit" value="Send" class="primary" />
-						</li>
-						<li>
-							<input type="reset" value="Reset" />
-						</li>
-					</ul>
-				</div>
-			</div>
-		</form>
-	</div>
-</section>
-
