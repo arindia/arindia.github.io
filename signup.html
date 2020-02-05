@@ -94,6 +94,17 @@ title: Become A Freelancer
 						<input type="text" name="twitter" id="twitter" placeholder="Twitter username (optional)" />
 					</abbr>
 				</div>
+				<div class="col-6 col-12-xsmall">
+					<input type="text" name="region" id="region" placeholder="Area" />
+				</div>
+				<div class="col-6 col-12-xsmall">
+					<select name="city" id="city" required="">
+						<option>Select your city</option>
+						{% for city in site.data.cities %}
+						<option value="{{ city.title }}, {{ city.state }}">{{ city.title }}, {{ city.state }}</option>
+						{% endfor %}
+					 </select>
+				</div>
 				<div class="col-12">
 					<textarea name="bio" id="bio" placeholder="Bio" rows="3"></textarea>
 				</div>
