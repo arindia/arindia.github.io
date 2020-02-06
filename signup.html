@@ -3,6 +3,15 @@ layout: default
 title: Become A Freelancer
 ---
 
+<script>
+var goBtn = document.getElementById("goBtn");
+var city = document.getElementById("city");
+
+goBtn.onclick = function() {
+  window.location = city.value;
+}
+</script>
+
 <!-- Banner -->
 <section id="banner">
 	<div class="content">
@@ -12,9 +21,16 @@ title: Become A Freelancer
 		<p>Get connected with customers looking for your service</p>
 		<form action="https://formspree.io/mgekajpd" method="POST">
 			<ul class="actions">
-				<li><input type="text" name="email" id="email" value="" placeholder="Email">
+				<li>
+					<select id="city">
+					<option selected="selected">Select your city</option>
+					{% for city in site.data.cities %}
+					<option value="{{ site.url }}/{{ city.name }}">{{ city.title }}</option>
+					{% endfor %}
+					</select>
 				</li>
-				<li><input type="submit" value="Send" class="primary" />
+				<li>
+					<input type="submit" value="GO!" class="primary" id="goBtn" />
 				</li>
 			</ul>
 		</form>
