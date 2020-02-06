@@ -19,21 +19,14 @@ goBtn.onclick = function() {
 			<h1>Expand your business with Arigato</h1>
 		</header>
 		<p>Get connected with customers looking for your service</p>
-		<form method="POST">
-			<ul class="actions">
-				<li>
-					<select id="city">
-					<option selected="selected">Select your city</option>
-					{% for city in site.data.cities %}
-					<option value="{{ site.url }}/{{ city.name }}">{{ city.title }}</option>
-					{% endfor %}
-					</select>
-				</li>
-				<li>
-					<input type="submit" value="Sign Up" class="primary" id="goBtn" />
-				</li>
-			</ul>
-		</form>
+		<ul class="actions">
+			<select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+			    <option value="">Select your city</option>
+			    {% for city in site.data.cities %}
+			    <option value="{{ site.url }}/{{ city.name }}">{{ city.title }}, {{ city.state }}</option>
+			    {% endfor %}
+			</select>
+		</ul>
 	</div>	
 	<span class="image object">
 		<img src="https://images.pexels.com/photos/273222/pexels-photo-273222.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" />
