@@ -20,12 +20,14 @@ goBtn.onclick = function() {
 		</header>
 		<p>Get connected with customers looking for your service</p>
 		<ul class="actions">
+			<li>
 			<select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
-			    <option value="">Select your city</option>
-			    {% for city in site.data.cities %}
-			    <option value="{{ site.url }}/{{ city.name }}/signup">{{ city.title }}</option>
-			    {% endfor %}
+				<option value="">Select your city</option>
+			    	{% for city in site.data.cities %}
+			    	<option value="{{ site.url }}/{{ city.name }}/signup">{{ city.title }}</option>
+			    	{% endfor %}
 			</select>
+			</li>
 		</ul>
 	</div>	
 	<span class="image object">
