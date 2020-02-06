@@ -23,7 +23,7 @@ goBtn.onclick = function() {
 			<select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
 			    <option value="">Select your city</option>
 			    {% for city in site.data.cities %}
-			    <option value="{{ site.url }}/{{ city.name }}">{{ city.title }}</option>
+			    <option value="{{ site.url }}/{{ city.name }}/signup">{{ city.title }}</option>
 			    {% endfor %}
 			</select>
 		</ul>
