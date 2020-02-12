@@ -5,3 +5,7 @@
 - name: mumbai
   title: Mumbai
   state: Maharashtra
+
+- name: beta
+  title: Beta
+  state: Maharashtra
