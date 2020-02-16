@@ -15,13 +15,12 @@ title: Help Center
 
 <section>
 	<div class="posts">
+		{% for help in site.data.help %}
 		<article>
-			<h2>Creating an Arigato Account</h2>
-			<p>How to sign up for an arigato account</p>
+			<h2>{{ help.title }}</h2>
+			<p>{{ help.subtitle }}</p>
+			<p>{{ help.content }}</p>
 		</article>
-		<article>
-			<h2>Managing your arigato account</h2>
-			<p>Keeping your account safe</p>
-		</article>
+		{% endfor %}
 	</div>
 </section>
