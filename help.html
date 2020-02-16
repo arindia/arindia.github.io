@@ -17,10 +17,10 @@ title: Help Center
 	<div class="posts">
 		{% for help in site.help %}
 		<article>
-			<h2><a href="{{ help.url  | relative_url }}">{{ help.title }}</a></h2>
+			<h2>{{ help.title }}</h2>
 			<p>{{ help.subtitle }}</p>
 			<hr>
-			<p>{{ content }}</p>
+			<p>{{ help.content }}</p>
 		</article>
 		{% endfor %}
 	</div>
