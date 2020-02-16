@@ -15,12 +15,10 @@ title: Help Center
 
 <section>
 	<div class="posts">
-		{% for help in site.data.help %}
+		{% for help in site.help %}
 		<article>
-			<h2>{{ help.title }}</h2>
+			<h2><a href="{{ help.url  | relative_url }}">{{ help.title }}</a></h2>
 			<p>{{ help.subtitle }}</p>
-			<p>{{ help.content }}</p>
-			<a href="{{ help.cta }}" class="button primary">{{ help.button }}</a>
 		</article>
 		{% endfor %}
 	</div>
