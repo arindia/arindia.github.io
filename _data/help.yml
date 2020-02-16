@@ -1,5 +1,8 @@
 - title: Creating your page
   subtitle: How to sign up for your profile page
+  content: Signing up for a Arigato profile page is easy. You'll just need to provide your name and email address, choose a plan and complete payment by Cash or Google Pay. We'll send you a verification email to confirm your account.
+  cta: "{{ site.url }}/signup"
+  button: Sign Up
   
 - title: Managing your profile page
   subtitle: Keeping your profile page safe
