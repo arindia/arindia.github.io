@@ -3,7 +3,7 @@ title: Updating a Profile Page
 subtitle: How to update a profile page
 ---
 
-<h3>Updating your subscription</h3
+<h3>Updating your subscription</h3>
 
 You can upgrade your subscription at any time. 
 
