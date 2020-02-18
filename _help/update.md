@@ -1,11 +1,11 @@
 ---
-title: Updating a Profile Page
-subtitle: How to update a profile page
+title: Updating a Profile
+subtitle: How to update a profile
 ---
 
 <h3>Updating your profile details</h3>
 
-Once your page is published and you've started a subscription, you can change your page information at any time. 
+Once your profile is published and you've started a subscription, you can change your page information at any time. 
 
 To update your profile page:
 
