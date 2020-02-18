@@ -24,9 +24,9 @@ layout: default
 			<div class="box">
 				<h2>Guides</h2>
 				<ul>
-					<li>Dolor etiam magna etiam.</li>
-					<li>Sagittis lorem eleifend.</li>
-					<li>Felis feugiat viverra.</li>
+					{% for help in site.help %}
+					<li><a href="{{ help.url  | relative_url }}">{{ help.title }}</a></li>
+					{% endfor %}
 				</ul>
 			</div>
 		</div>
