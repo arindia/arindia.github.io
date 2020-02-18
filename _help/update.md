@@ -12,7 +12,7 @@ To update your profile page:
 <ol>
   <li>Go to <a href="{{ site.url }}/update">Update your profile</a></li>
   <li>Type in your registered email address</li>
-  <li>Select what you wanna update</li>
+  <li>Select what you want to update</li>
   <li>Enter your details and click <b>Update</b></li>
 </ol>
 
