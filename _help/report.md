@@ -16,3 +16,5 @@ To report a problem:
 </ol>
 
 Thank you for helping us protect our community.
+
+<a href="{{ site.url }}/report" class="button primary">Report a Problem</a>
