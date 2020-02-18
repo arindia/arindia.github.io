@@ -3,8 +3,6 @@ title: Reporting a Problem
 subtitle: How to report a profile / problem
 ---
 
-<h3>Updating your profile details</h3>
-
 We have made a report page that allows members of our community to report security vulnerabilities to our team. 
 
 To report a problem:
