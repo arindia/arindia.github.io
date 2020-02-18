@@ -16,4 +16,4 @@ To create your profile page:
 
 We'll send you a verification email to confirm your page.
 
-<a href="{{ site.url }}/signup" class="button primary">Sign Up</a>
+<a href="{{ site.url }}/signup" class="button primary">Become a Freelancer</a>
