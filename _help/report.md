@@ -5,7 +5,7 @@ subtitle: How to report a profile / problem
 
 <h3>Updating your profile details</h3>
 
-Arigato India has a Helpful Support program that allows members of our community to report security vulnerabilities to our team. 
+We have made a report page that allows members of our community to report security vulnerabilities to our team. 
 
 To report a problem:
 
